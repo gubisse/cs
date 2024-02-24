@@ -379,10 +379,9 @@
 						fetch(url)
 						  .then(response => {
 						    if (response.ok) {
-						      console.log('O arquivo is.html existe na pasta portifoly/aulas');
-							document.getElementById('object-conteudo').setAttribute('data',url);
+								document.getElementById('object-conteudo').setAttribute('data',url);
 						    } else {
-						      console.log('O arquivo is.html não existe na pasta portifoly/aulas');
+						      console.log('O arquivo ',+this.textContent.toLowerCase()+'.html, não existe na pasta portifoly/aulas');
 						    }
 						  })
 						  .catch(error => console.error('Erro ao verificar o arquivo:', error));
