@@ -3,9 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<title>Leonardo Nogueira</title>
-	<link rel="stylesheet" type="text/css" href="estilo.css">
 	<link rel = "shortcut icon" type = "imagem/x-icon" href = "img/favicon-16x16.png"/>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style type="text/css">
+    	#object-conteudo{
+    		width: 100%;
+			height: 76vh; /* Substitua 0px pela altura do rodapé, se aplicável */
+		}
+    </style>
 </head>
 <body>
 	<div id="hero" class="hero ">
@@ -23,8 +29,8 @@
 			</div>
 		</div>
 	</div>
-	<cs id="aulas" class="aula-section" style="display: none;">
-		<div class="container">
+	<cs id="aulas" class="aula-section container-fluid" style="display: none;">
+		<div class="m-2">
 			<h1>Aulas</h1>
 			<div class="d-flex justify-content-between">
 				<div class="dropdown">
@@ -48,10 +54,13 @@
 			<div id="panel-conteudo" class="mt-3" style="display: none;">
 				<div class="d-flex justify-content-between">					
 					<h2 class="text-uppercase" name="nome-cadeira"></h2>
-					<span name="semestre"></span>			
+					<div>
+						<span class="me-5" name="semestre"></span>
+						<a class="btn btn-primary m-2" href="#">Anotacoes</a>		
+					</div>
 				</div>
 				<div class="row mt-2 opacity-5">
-					<object id="object-conteudo"  type="text/html" width="600" height="400"></object>			
+					<object id="object-conteudo"  type="text/html" ></object>			
 				</div>
 			</div>
 
@@ -60,7 +69,7 @@
 	<cs class="work-section" id="init">
 		<div class="container">
 			<h3>Meus trabalhos</h3>
-			<div class="works-wrapper">
+			<div class="works-wrapper row">
 				<div class="work one">
 					<div class="work-cover">
 						<div class="website-name">Designs responsivos</div>
@@ -120,9 +129,9 @@
 		 		<div class="social-wrapper">
 
 		 			<a href="https://web.facebook.com/profile.php?id=100089562308270&locale=pt_BR" class="social-icon"><img src="img/facebook-svgrepo-com.svg" alt="facebook"></a>
-				<a href="https://api.whatsapp.com/send?phone=258867029608" class="social-icon">
-					<img src="img/whatsapp-svgrepo-com.svg">
-				</a>
+					<a href="https://api.whatsapp.com/send?phone=258867029608" class="social-icon">
+						<img src="img/whatsapp-svgrepo-com.svg">
+					</a>
 		 		<!--
 		 			<a href="#" class="social-icon"><img src="img/instagram.svg" alt="instagram"></a>
 		 			<a href="#" class="social-icon"><img src="img/linkedin.svg" alt="linkedin"></a>
@@ -206,63 +215,65 @@
 		document.querySelectorAll('a').forEach(link => {
 		    link.addEventListener('click', function(event) {
 		    	var v=link.href;
-				if(v!=''){
-					var partes = v.split('#');
-					var urlBase = partes[0]; // "https://www.example.com/pagina"
-					fragmento = partes[1]; // "secao"
-				}
-
-				document.querySelectorAll('cs').forEach(cs => {
-					cs.style.display="none";
-				});
-
-				if (fragmento==='aulas') {
-					//var nr=document.querySelector('input[name="nome-restricao"]').value;
-					// Supondo que 'nr' seja o nome a ser verificado
-					let nr = "G.Ubisse"; // Aqui você pode definir o nome que deseja verificar
-
-					// Verifica se 'nr' está na lista 'nome_autorizados'
-					if((document.getElementById('panel-r').style.display=="none")==true){
-						document.getElementById(fragmento).style.display="block";
-						document.getElementById('btn-login-cs').style.display="none";						
-						localStorage.setItem('nomerestricao', nr);
-						localStorage.setItem('fragmento', fragmento);
-					console.log(document.getElementById('panel-r').style.display=="none");
-					}else if(nome_autorizados.includes(nr)) {
-					    // Se 'nr' estiver na lista, oculta o elemento correspondente ao fragmento
-					    // Suponha que 'link' seja a referência para o elemento <a> que você deseja modificar
-						link.removeAttribute('href');
-						link.innerHTML="Entrar";
-						document.getElementById('panel-r').style.display="none";
-					    document.querySelector('span[name="span_msg_login_cs"]').style.color="green";
-					    document.querySelector('span[name="span_msg_login_cs"]').innerHTML="confirmado";
-					    
-					}else {
-					    document.querySelector('span[name="span_msg_login_cs"]').style.color="red";
-					    document.querySelector('span[name="span_msg_login_cs"]').innerHTML="não está na lista";
+		    	if(!(v.includes('html'))){
+					if(v!=''){
+						var partes = v.split('#');
+						var urlBase = partes[0]; // "https://www.example.com/pagina"
+						fragmento = partes[1]; // "secao"
 					}
 
-				}else if(fragmento==='init'){
-					document.querySelectorAll('cs').forEach(cs => {
-						cs.style.display="block";
-						if(sessao==null){
-							document.getElementById("aulas").style.display="none";
-							document.getElementById('btn-login-cs').style.display="block";	
-						}
-					});
-					
-				}else if(fragmento==='sistemas'){
 					document.querySelectorAll('cs').forEach(cs => {
 						cs.style.display="none";
 					});
-					document.getElementById(fragmento).style.display="block";
-					
+
+					if (fragmento==='aulas') {
+						//var nr=document.querySelector('input[name="nome-restricao"]').value;
+						// Supondo que 'nr' seja o nome a ser verificado
+						let nr = "G.Ubisse"; // Aqui você pode definir o nome que deseja verificar
+
+						// Verifica se 'nr' está na lista 'nome_autorizados'
+						if((document.getElementById('panel-r').style.display=="none")==true){
+							document.getElementById(fragmento).style.display="block";
+							document.getElementById('btn-login-cs').style.display="none";						
+							localStorage.setItem('nomerestricao', nr);
+							localStorage.setItem('fragmento', fragmento);
+						console.log(document.getElementById('panel-r').style.display=="none");
+						}else if(nome_autorizados.includes(nr)) {
+						    // Se 'nr' estiver na lista, oculta o elemento correspondente ao fragmento
+						    // Suponha que 'link' seja a referência para o elemento <a> que você deseja modificar
+							link.removeAttribute('href');
+							link.innerHTML="Entrar";
+							document.getElementById('panel-r').style.display="none";
+						    document.querySelector('span[name="span_msg_login_cs"]').style.color="green";
+						    document.querySelector('span[name="span_msg_login_cs"]').innerHTML="confirmado";
+						    
+						}else {
+						    document.querySelector('span[name="span_msg_login_cs"]').style.color="red";
+						    document.querySelector('span[name="span_msg_login_cs"]').innerHTML="não está na lista";
+						}
+
+					}else if(fragmento==='init'){
+						document.querySelectorAll('cs').forEach(cs => {
+							cs.style.display="block";
+							if(sessao==null){
+								document.getElementById("aulas").style.display="none";
+								document.getElementById('btn-login-cs').style.display="block";	
+							}
+						});
+						
+					}else if(fragmento==='sistemas'){
+						document.querySelectorAll('cs').forEach(cs => {
+							cs.style.display="none";
+						});
+						document.getElementById(fragmento).style.display="block";
+						
+					}
+		        // Por exemplo, se você quiser evitar o comportamento padrão de seguir o link
+		        event.preventDefault();
 				}
 
 
 		        
-		        // Por exemplo, se você quiser evitar o comportamento padrão de seguir o link
-		        event.preventDefault();
 		    });
 		});
 		
@@ -340,6 +351,8 @@
 				    link.addEventListener('click', function() {
 				        // Aqui você pode colocar o código que deseja executar quando o link for clicado
 
+						document.getElementById('link-cadeira-aula').parentNode.parentNode.id=this.textContent;
+
 						/**
 						 * ==============================================
 						 * TRABALHANDO EM LINKS DA CADEIRA CLICADA
@@ -375,18 +388,22 @@
 							document.querySelector('span[name="semestre"]').innerHTML="Docente: Vasco Macicame e ";
 						}
 						var url ="./portifoly/aulas/"+this.textContent.toLowerCase()+".html";
-
+/*
 						fetch(url)
 						  .then(response => {
 						    if (response.ok) {
+						    	*/
 								document.getElementById('object-conteudo').setAttribute('data',url);
+								/*
 						    } else {
+						    	
 						      console.log('O arquivo ',+this.textContent.toLowerCase()+'.html, não existe na pasta portifoly/aulas');
 						    }
 						  })
 						  .catch(error => console.error('Erro ao verificar o arquivo:', error));
 
-
+*/
+						console.log();
 
 
 				    });
