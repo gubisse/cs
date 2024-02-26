@@ -126,9 +126,10 @@
 	<main class="px-3">
 		<cs id="inicio">
 		    <h1 class="my-5">Bem-vindo à CS</h1>
-		    <p class="lead">Somos muito entusiasmados em recebe-lo e somos muito entusiasmados da tecnologia apaixonados por desenvolvimento de sistemas e pela manutenção eficaz de hardware de ativos informáticos. Nossa jornada profissional é marcada pela dedicação em fornecer soluções inovadoras e eficientes, combinando habilidades técnicas sólidas com uma mentalidade focada em resultados.<br><br><b>Vamos em frente, rumo ao futuro!</b></p>
-		    <p class="lead">
-		      <button name="sobre-cs" class="btn btn-cs border-top border-start text-white my-5 text-uppercase">Saber mais sobre CS</button>
+		    <p class="lead">Somos muito entusiasmados em recebe-lo e somos muito entusiasmados da tecnologia e apaixonados por desenvolvimento de sistemas e pela manutenção eficaz de hardware de ativos informáticos. Nossa jornada profissional é marcada pela dedicação em fornecer soluções inovadoras e eficientes, combinando habilidades técnicas sólidas com uma mentalidade focada em resultados.<br><br><b>Vamos em frente, rumo ao futuro!</b></p>
+		    <p class="lead d-grid justify-content-around">
+		      <a><button name="sobre-cs" class="btn btn-cs border-top border-start text-white text-uppercase">Saber mais sobre CS</button></a>
+		      <a href="https://api.whatsapp.com/" ><button name="admin" class="bg-transparent text-start text-success "><img src="img/whatsapp.svg" width="30px">Compartilhe no whatsapp</button></a>
 		    </p>  		
 		</cs>
 
@@ -179,7 +180,7 @@
 
 		<cs id="admin" class="my-2" >
 			<h1 class="mb-3">Gonçalves Ubisse</h1>
-			<p class="lead">Sou Administrador da casa de sistemas desde 2023. Estou sempre para aprender novas tecnologias, desenvolvendo. Sou finalista em licenciatura no Tecnologias de informacao em UCM -FENG. Minha esperiencia é desenvolver sistemas.</p>
+			<p class="lead">Sou Administrador da casa de sistemas desde 2023. Estou sempre para aprender novas tecnologias, desenvolvendo. Sou finalista em licenciatura no curso de Tecnologias de Informação em UCM -FENG. Minha esperiência é desenvolver sistemas, dar soluções a problemas de <i>hardware</i>.</p>
 			<div class="lead row" style="background: #00000090;">	
 				<div class="col-md">
 					<img class="img-admin" src="img/perfil-fundo-brancado.jpeg" >
@@ -206,7 +207,7 @@
 		</cs>
 		<cs id="inaxistencia">
 			<h1 class="my-5">...Error...</h1>
-			<p class="lead">Do momento nao podemos atender, podes tentar novamente mais tarde.</p>
+			<p class="lead">Do momento não podemos atender, podes tentar novamente mais tarde.</p>
 		</cs>
 	</main>
 
@@ -219,7 +220,7 @@
 		  <div class="modal-dialog modal-dialog-centered ">
 		    <div class="modal-content bg-dark">
 		      <div class="modal-header">
-		        <h1 class="modal-title fs-5" id="staticBackdropLabel">Restricao</h1>
+		        <h1 class="modal-title fs-5" id="staticBackdropLabel">Restrição</h1>
 		        <button name="nulo" id="fechar-modal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 		      </div>
 		      <div class="modal-body d-flex justify-content-between">
@@ -255,7 +256,8 @@
 	document.querySelector('button[name="inicio"]').classList.add('active');
 	document.getElementById('inicio').style.display="block";
 
-	let sessao=localStorage.getItem('nomerestricao');
+	let sessao="";
+	sessao=localStorage.getItem('nomerestricao');
 	let nome_autorizados=[
 		"P.Bertuzzi",
 		"G.Ubisse",
@@ -329,16 +331,12 @@
 	    	if(click==="inicio"){
 	    		//document.getElementById('inicio').style.display="block";
 	    	}else if(click==="cs"){
-
-				//document.getElementById('cs').style.display="block";				
-				//document.querySelector('span[name="nome-restricao"]').innerHTML=sessao;
+s
 
 	    	}else if(click==="admin"){
 	    		//document.getElementById('admin').style.display="block";	    		
 	    	}else if(click==='auth'){
 	    		var nr=document.querySelector('input[name="nome-restricao"]').value;
-
-				// Verifica se 'nr' está na lista 'nome_autorizados'
 				if(nome_autorizados.includes(nr)){
 										
 					localStorage.setItem('nomerestricao', nr);
