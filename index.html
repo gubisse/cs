@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
-    <title>Cover Template · Bootstrap v5.0</title>
+    <title>Casa de sistemas</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
 
@@ -70,6 +70,18 @@
 	    text-transform: uppercase;
 	    text-align: center;
       }
+      @media (max-width: 576px){
+	    .marquee {
+	        white-space: nowrap;
+	        overflow: hidden;
+	        animation: marquee 10s linear infinite;
+	    }
+
+	    @keyframes marquee {
+	        50% { transform: translateX(0%); }
+	        50%	{ transform: translateX(-25%); }
+	    }   	
+      }
       @media (min-width: 576px){
 	      .logo-cs{
 	      	border: none;
@@ -93,8 +105,8 @@
 		<div class="row justify-content-center">
 			<h3 class="col col-12 col-sm-6 py-3 logo-cs">Casa de sistemas</h3>
 			<nav class="row col-auto col-12 col-sm-6 nav nav-masthead d-flex justify-content-between">
-				<button class=" col-4 col-sm-3 nav-link  active" name="inicio">Inicio</button>
-				<button class=" col-4 col-sm-3 nav-link " name="cs" type="button" data-bs-toggle="modal" data-bs-target="#modalLogin">CS</button>
+				<button class=" col-3 col-sm-3 nav-link  active" name="inicio">Inicio</button>
+				<button class=" col-3 col-sm-3 nav-link " name="cs" type="button" data-bs-toggle="modal" data-bs-target="#modalLogin">CS</button>
 				<button class=" col-3 col-sm-3 nav-link " name="admin">Admin</button>
 			</nav>
 		</div>
@@ -145,6 +157,7 @@
 			<div class="d-flex justify-content-between">
 				<h1 >Aulas</h1>
 				<h1><span name="nome-restricao"></sapn></h1>
+				<button class="btn btn-cs border-top border-start text-white text-uppercase" name="terminarsessaoaula">Terminar aula</button>
 			</div>
 		    <div class="dropdown ">
 				<btn-cs class="w-100 btn border-top border-start text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -167,25 +180,27 @@
 			</div>		
 		</cs>
 
-		<cs id="admin" class="border my-2">
+		<cs id="admin" class="my-2" >
 			<h1 class="mb-3">Gonçalves Ubisse</h1>
 			<p class="lead">Sou Administrador da casa de sistemas desde 2023. Estou sempre para aprender novas tecnologias, desenvolvendo. Sou finalista em licenciatura no Tecnologias de informacao em UCM -FENG. Minha esperiencia é desenvolver sistemas.</p>
-			<div class="lead row">	
-				<h3 class="my-5">Entre em contato</h3>
+			<div class="lead row" style="background: #00000090;">	
 				<div class="col-md">
 					<img class="img-admin" src="img/perfil-fundo-brancado.jpeg" >
 					<p>&copy 2024</p>
 				</div>
 				<div class="col-md-auto">				
 					<div class="d-grid">
-						<a href="mailto:goncalvesalbertoubisse@gmail.com" class="w-100"><button class="bg-transparent text-start text-info w-100">
-							<img src="img/e-mail.svg" width="50px">goncalvesalbertoubisse@gmail.com
+						<a href="mailto:goncalvesalbertoubisse@gmail.com" class="w-100"><button name="admin" class="bg-transparent text-start text-info w-100">
+							<img src="img/e-mail.svg" width="30px">casasistemas@gmail.com
 						</button></a>
-						<a href="https://api.whatsapp.com/send?phone=258867029608" ><button class="bg-transparent text-start text-success w-100">
-							<img src="img/whatsapp.svg" width="50px">+258 867029383
+						<a href="https://api.whatsapp.com/send?phone=258867029608" ><button name="admin" class="bg-transparent text-start text-success w-100">
+							<img src="img/whatsapp.svg" width="30px">+258 867029383
 						</button></a>
-						<a id="btn-copy-phone" ><button class="bg-transparent text-start text-success w-100">
-							<img src="img/call-dropped-rounded-svgrepo-com.svg" width="50px"><span name="phone-a-copiar">+258 845109383</span>
+						<a id="btn-copy-phone" ><button name="admin" class="bg-transparent text-start text-success w-100">
+							<img src="img/call-dropped-rounded-svgrepo-com.svg" width="30px"><span name="phone-a-copiar">+258 845109383</span>
+						</button></a>
+						<a href="https://web.facebook.com/profile.php?id=100089562308270" class="w-100"><button name="admin" class="bg-transparent text-start text-info w-100">
+							<img src="img/facebook-svgrepo-com.svg" width="30px">Talento NT computação
 						</button></a>
 					</div>
 				</div>
@@ -195,9 +210,6 @@
 		<cs id="inaxistencia">
 			<h1 class="my-5">...Error...</h1>
 			<p class="lead">Do momento nao podemos atender, podes tentar novamente mais tarde.</p>
-			<p class="lead">
-			<a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white my-5">Contactar</a>
-			</p>  		
 		</cs>
 	</main>
 
@@ -211,12 +223,12 @@
 		    <div class="modal-content bg-dark">
 		      <div class="modal-header">
 		        <h1 class="modal-title fs-5" id="staticBackdropLabel">Restricao</h1>
-		        <button id="fechar-modal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		        <button name="nulo" id="fechar-modal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 		      </div>
 		      <div class="modal-body d-flex justify-content-between">
 		      	<div id="panel-r" class="w-100 me-2">
 		      		<label>nome</label>
-		      		<input type="text" name="nome-restricao" class="form-control" required>
+		      		<input type="text" name="nome-restricao" class="form-control" maxlength="15" required>
 		      	</div>
 		      	<button name="auth" class="text-white bg-transparent opacity-5" data-bs-dismiss="modal">Confirmar</button>
 		      </div>
@@ -243,9 +255,10 @@
 		cs.parentNode.parentNode.classList.remove('cover-container-cs');
 		cs.parentNode.parentNode.classList.add('cover-container');
 	});
+	document.querySelector('button[name="inicio"]').classList.add('active');
+	document.getElementById('inicio').style.display="block";
 
 	let sessao=localStorage.getItem('nomerestricao');
-	let fragmento=localStorage.getItem('fragmento');
 	let nome_autorizados=[
 		"P.Bertuzzi",
 		"G.Ubisse",
@@ -266,9 +279,6 @@
 				button.removeAttribute('data-bs-toggle');
 			}
 		});
-		document.querySelector('button[name="cs"]').classList.add('active');
-
-		document.getElementById('cs').style.display="block";
 		
 	}
 
@@ -298,11 +308,11 @@
 	});
 
 	//PRESTAR TODOS OS BUTTONs
-	let idAnte="";
   	document.querySelectorAll('button').forEach(button => {
 	    button.addEventListener('click', function(event) {
 
 	    	var click = button.getAttribute('name');
+	    	var nameBTN="";
 
 			document.querySelectorAll('button').forEach(butto => {
 				butto.classList.remove('active');
@@ -333,31 +343,29 @@
 
 				// Verifica se 'nr' está na lista 'nome_autorizados'
 				if(nome_autorizados.includes(nr)){
-					alert(nome_autorizados);
-					/*
-					document.getElementById(fragmento).style.display="block";
-					document.getElementById('btn-login-cs').style.display="none";						
+										
 					localStorage.setItem('nomerestricao', nr);
-					localStorage.setItem('fragmento', fragmento);
-					*/
-				//console.log(document.getElementById('panel-r').style.display=="none");
+					click="cs";
+				    nameBTN="cs";
+					button.removeAttribute('data-bs-target');
+					button.removeAttribute('data-bs-toggle');
 				}else {
-					alert(nome_autorizados);
-					/*
-				    document.querySelector('span[name="span_msg_login_cs"]').style.color="red";
-				    document.querySelector('span[name="span_msg_login_cs"]').innerHTML="não está na lista";
-				    */
+					click="inaxistencia";
+				    nameBTN="cs";
 				}
 
-	    	}
-	    	if(!(click===null)){
-	    		idAnte = click;
-				document.getElementById(click).style.display="block";
+	    	}else if(click==="nulo"){
+	    		click="inicio";
+	    		 nameBTN=click;
 
-	    	}else{	    		
-				document.getElementById(idAnte).style.display="block";
+	    	}else if(click=="terminarsessaoaula"){
+				localStorage.removeItem('nomerestricao');
+				sessao=null;				
+	    		click="inicio";
+	    		nameBTN=click;
 	    	}
-	        // Exibir mensagem quando um botão é clicado
+			document.getElementById(click).style.display="block";
+			document.querySelector('button[name="'+nameBTN+'"]').classList.add('active');
 	    });
 	});
 	var link="";
