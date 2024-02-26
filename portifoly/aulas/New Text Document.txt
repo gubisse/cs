@@ -1,0 +1,11 @@
+<p><b>➢Introdução</b></p>
+											      		<p><b>➢Recolha de dados</b></p>
+											      		<p><b>➢Descrição dos dados</b></p>
+											      		<p><b>➢Tirar conclusões</b></p>
+											      		<p><b>➢Previsão e Explicação </b></p>
+											      		<p><b>➢Populações & Amostras </b></p>
+											      		<p><b>➢Parâmetros & Estatísticas </b></p>
+											      		<p><b>➢Tipos de Estudo </b></p>
+											      		<p><b>➢Tipos de amostra </b></p>
+											      		<p><b>➢Tipos de dados </b></p>
+											      		<p><b>➢Níveis de Medição</b></p>

@@ -2,4 +2,4 @@
 Portifolio
 Contendos as Tecnologias Desenvolvidas
 
-https://master-jr.github.io/Portifoly/
+https://ubissega.github.io/cs/

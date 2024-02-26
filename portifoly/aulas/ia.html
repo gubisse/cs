@@ -7,6 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <style type="text/css">
+    	body{
+    		background: #212529;
+    	}
     	a:hover{
     		background: blue;
     		color: #fff;
@@ -14,28 +17,28 @@
     </style>
 </head>
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid ">
     
-    <div class="row my-2">
-    	<div class="accordion" id="accordionIntCade">
-		  <div class="accordion-item">
-		    <h2 class="accordion-header">
-		      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#intCade" aria-expanded="true" aria-controls="intCade">
+    <div class="row my-2 bg-transparent">
+    	<div class="accordion bg-transparent" id="accordionIntCade">
+		  <div class="accordion-item bg-transparent bg-transparent">
+		    <h2 class="accordion-header bg-transparent bg-transparent">
+		      <button class="accordion-button text-white fw-bold bg-transparent bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#intCade" aria-expanded="true" aria-controls="intCade">
 		       <h1 class="">Introdução à Cadeira</h1>
 		      </button>
 		    </h2>
-		    <div id="intCade" class="accordion-collapse collapse show" data-bs-parent="#accordionIntCade">
-				<div class="accordion-body">
+		    <div id="intCade" class="accordion-collapse bg-transparent bg-transparent collapse show " data-bs-parent="#accordionIntCade">
+				<div class="accordion-body bg-transparent bg-transparent">
 					<div class="row">
 						
 						<div class="col-md-6">
 						    <div class="card my-3">
 						      <div class="card-body">
-						      	<button   class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#intEstistica" aria-expanded="false" aria-controls="accordionIntCade">
+						      	<button   class="accordion-button bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#intEstistica" aria-expanded="false" aria-controls="accordionIntCade">
 							        <h5 class="card-title row w-100"><b class="col">Estatística</b><span class="col-auto me-3">Tópico 1</span></h5>
 							    </button>
-						        <div id="intEstistica" class="accordion-collapse collapse" data-bs-parent="#accordionEstatistica">
-							      	<div class="accordion-body">
+						        <div id="intEstistica" class="accordion-collapse bg-transparent collapse" data-bs-parent="#accordionEstatistica">
+							      	<div class="accordion-body bg-transparent">
 							      		
 							      		<div class="my-1"><p class="row"><b class="col">➢Introdução</b><a class="col-auto" href="#conteudoEstatistica" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"  aria-controls="collapseOne">Ir para a abordagem</a></p></div>
 							      		<div class="my-1"><p class="row"><b class="col">➢Recolha de dados</b><a class="col-auto" href="#recDados" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"  aria-controls="collapseTwo">Ir para a abordagem</a></p></div>
@@ -58,11 +61,11 @@
 					<div class="col-md-6">
 					    <div class="card my-3">
 					      <div class="card-body">
-					      	<button   class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#intCD" aria-expanded="false" aria-controls="intCD">
+					      	<button   class="accordion-button  bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#intCD" aria-expanded="false" aria-controls="intCD">
 						        <h5 class="card-title row w-100"><b class="col">Ciência de Dados</b><span class="col-auto me-3">Tópico 2</span></h5>
 						    </button>
-					        <div id="intCD" class="accordion-collapse collapse" data-bs-parent="#accordionEstatistica">
-						      	<div class="accordion-body">
+					        <div id="intCD" class="accordion-collapse bg-transparent collapse" data-bs-parent="#accordionEstatistica">
+						      	<div class="accordion-body bg-transparent">
 						      		
 						      		<div class="my-1"><p class="row"><b class="col">➢Introdução</b><a class="col-auto" href="#t1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"  aria-controls="collapseTwo">Ir para a abordagem</a></p></div>
 						      		<div class="my-1"><p class="row"><b class="col">➢Recolha de dados</b><a class="col-auto" href="#t1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"  aria-controls="collapseTwo">Ir para a abordagem</a></p></div>
@@ -87,28 +90,28 @@
 
 	<div class="row my-2">
     	<div class="accordion" id="accordionEstatistica">
-		  <div class="accordion-item">
-		    <h2 class="accordion-header">
-		      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		  <div class="accordion-item bg-transparent">
+		    <h2 class="accordion-header bg-transparent">
+		      <button class="accordion-button text-white bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 		       <h1 class="">Estatística</h1>
 		      </button>
 		    </h2>
-		    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionIntCade">
-				<div class="accordion-body">
+		    <div id="collapseOne" class="accordion-collapse bg-transparent collapse" data-bs-parent="#accordionIntCade">
+				<div class="accordion-body bg-transparent">
 					<div class="row">
 						
 						<div class="col-md-12">
 						    <div class="card my-3">
 						      <div class="card-body">
-						      	<button   class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaIntro" aria-expanded="false" aria-controls="">
+						      	<button   class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaIntro" aria-expanded="false" aria-controls="">
 							        <h5 class="card-title row w-100"><b class="col">➢Introdução</b><span class="col-auto me-3">Capitulo 1</span></h5>
 							    </button>
-						        <div id="conteudoEstatisticaIntro" class="accordion-collapse collapse " data-bs-parent="#collapseOne">
-							      	<div class="accordion-body">
+						        <div id="conteudoEstatisticaIntro" class="accordion-collapse bg-transparent collapse " data-bs-parent="#collapseOne">
+							      	<div class="accordion-body bg-transparent">
 							      		
-							      		<div id="contInt" class="my-1 accordion-collapse collapse show" data-bs-parent="#conteudoEstatisticaIntro">
+							      		<div id="contInt" class="my-1 accordion-collapse bg-transparent collapse show" data-bs-parent="#conteudoEstatisticaIntro">
 
-							      			<div class="accordion-body">
+							      			<div class="accordion-body bg-transparent">
 							      				<p class="">A <b>Estatistica </b></p>
 							      				<p>Oferece-nos os metodos para solucionar problemas atraves de dados</p>
 							      				<ol>
@@ -159,15 +162,15 @@
 						<div class="col-md-12">
 						    <div class="card my-3">
 						      <div class="card-body">
-						      	<button   class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaCap2" aria-expanded="false" aria-controls="">
+						      	<button   class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaCap2" aria-expanded="false" aria-controls="">
 							        <h5 class="card-title row w-100"><b class="col">➢Recolha de dados</b><span class="col-auto me-3">Capitulo 2</span></h5>
 							    </button>
-						        <div id="conteudoEstatisticaCap2" class="accordion-collapse collapse " data-bs-parent="#collapseOne">
-							      	<div class="accordion-body">
+						        <div id="conteudoEstatisticaCap2" class="accordion-collapse bg-transparent collapse " data-bs-parent="#collapseOne">
+							      	<div class="accordion-body bg-transparent">
 							      		
-							      		<div id="contInt" class="my-1 accordion-collapse collapse show" data-bs-parent="#conteudoEstatisticaCap2">
+							      		<div id="contInt" class="my-1 accordion-collapse bg-transparent collapse show" data-bs-parent="#conteudoEstatisticaCap2">
 
-							      			<div class="accordion-body">
+							      			<div class="accordion-body bg-transparent">
 							      				<p>É trabalhoso reunir informaões sobre todos vivente de um pais. Portanto é recolhe-se de um grupo apenas. Isso, é chamado de amostra</p>
 							      				<b>Amostra</b>
 							      				<ol>
@@ -188,15 +191,15 @@
 						<div class="col-md-12">
 						    <div class="card my-3">
 						      <div class="card-body">
-						      	<button   class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaCap3" aria-expanded="false" aria-controls="">
+						      	<button   class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaCap3" aria-expanded="false" aria-controls="">
 							        <h5 class="card-title row w-100"><b class="col">➢Descrição dos dados</b><span class="col-auto me-3">Capitulo 3</span></h5>
 							    </button>
-						        <div id="conteudoEstatisticaCap3" class="accordion-collapse collapse " data-bs-parent="#collapseOne">
-							      	<div class="accordion-body">
+						        <div id="conteudoEstatisticaCap3" class="accordion-collapse bg-transparent collapse " data-bs-parent="#collapseOne">
+							      	<div class="accordion-body bg-transparent">
 							      		
-							      		<div id="contInt" class="my-1 accordion-collapse collapse show" data-bs-parent="#conteudoEstatisticaCap3">
+							      		<div id="contInt" class="my-1 accordion-collapse bg-transparent collapse show" data-bs-parent="#conteudoEstatisticaCap3">
 
-							      			<div class="accordion-body">
+							      			<div class="accordion-body bg-transparent">
 							      				<p><b>Estatísticas Descritivas:</b> são medidas que descrevem ou resumem características importantes de um conjunto de dados. Elas incluem medidas como média, mediana, moda, quartis, desvio padrão, variância, mínimo, máximo, entre outros. As estatísticas descritivas ajudam a entender a distribuição dos dados, sua tendência central e sua dispersão.</p>
 
 							      				<ol>
@@ -212,11 +215,11 @@
 							      				<p><b>Estatísticas Resumidas</b> são geralmente um conjunto mais reduzido de estatísticas descritivas que são utilizadas para fornecer uma visão geral rápida dos dados. Elas podem incluir apenas algumas medidas, como a média e o desvio padrão, ou mesmo apenas um único valor, como a média. Estatísticas resumidas são úteis quando se deseja comunicar informações concisas sobre os dados, sem entrar em detalhes mais específicos</p>
 
 
-										      	<button   class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ex1cd" aria-expanded="false" aria-controls="">
+										      	<button   class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#ex1cd" aria-expanded="false" aria-controls="">
 											        <h5 class="card-title row w-100"><b class="col">Exemplo : descritiva e resummida</b><span class="col-auto me-3"></span></h5>
 											    </button>
-										        <div id="ex1cd" class="accordion-collapse collapse " data-bs-parent="#contInt">
-											      	<div class="accordion-body">
+										        <div id="ex1cd" class="accordion-collapse bg-transparent collapse " data-bs-parent="#contInt">
+											      	<div class="accordion-body bg-transparent">
 											      		<p><b>Um conjunto de dados hipotético representando as idades de dez pessoas:</b></p>
 											      		<p>idades = [ 25, 30, 35, 40, 45, 50, 55, 60, 65, 70 ]</p>
 											      		<p><b>Calcular algumas estatísticas descritivas</b></p>
@@ -259,15 +262,15 @@
 						<div class="col-md-12">
 						    <div class="card my-3">
 						      <div class="card-body">
-						      	<button   class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaCap4" aria-expanded="false" aria-controls="">
+						      	<button   class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaCap4" aria-expanded="false" aria-controls="">
 							        <h5 class="card-title row w-100"><b class="col">➢Tirar conclusões</b><span class="col-auto me-3">Capitulo 2</span></h5>
 							    </button>
-						        <div id="conteudoEstatisticaCap4" class="accordion-collapse collapse " data-bs-parent="#collapseOne">
-							      	<div class="accordion-body">
+						        <div id="conteudoEstatisticaCap4" class="accordion-collapse bg-transparent collapse " data-bs-parent="#collapseOne">
+							      	<div class="accordion-body bg-transparent">
 							      		
-							      		<div id="contInt" class="my-1 accordion-collapse collapse show" data-bs-parent="#conteudoEstatisticaCap4">
+							      		<div id="contInt" class="my-1 accordion-collapse bg-transparent collapse show" data-bs-parent="#conteudoEstatisticaCap4">
 
-							      			<div class="accordion-body">
+							      			<div class="accordion-body bg-transparent">
 							      				<p><b>Inferencia estatistica:</b> é usar dados da amostra para tomar conlcusoes o todo.</p>
 							      			</div>
 							      		</div>
@@ -280,15 +283,15 @@
 						<div class="col-md-12">
 						    <div class="card my-3">
 						      <div class="card-body">
-						      	<button   class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaCap5" aria-expanded="false" aria-controls="">
+						      	<button   class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaCap5" aria-expanded="false" aria-controls="">
 							        <h5 class="card-title row w-100"><b class="col">➢Previsão e Explicação</b><span class="col-auto me-3">Capitulo 2</span></h5>
 							    </button>
-						        <div id="conteudoEstatisticaCap5" class="accordion-collapse collapse " data-bs-parent="#collapseOne">
-							      	<div class="accordion-body">
+						        <div id="conteudoEstatisticaCap5" class="accordion-collapse bg-transparent collapse " data-bs-parent="#collapseOne">
+							      	<div class="accordion-body bg-transparent">
 							      		
-							      		<div id="contInt" class="my-1 accordion-collapse collapse show" data-bs-parent="#conteudoEstatisticaCap5">
+							      		<div id="contInt" class="my-1 accordion-collapse bg-transparent collapse show" data-bs-parent="#conteudoEstatisticaCap5">
 
-							      			<div class="accordion-body">
+							      			<div class="accordion-body bg-transparent">
 							      				<p>bla</p>
 							      			</div>
 							      		</div>
@@ -301,15 +304,15 @@
 						<div class="col-md-12">
 						    <div class="card my-3">
 						      <div class="card-body">
-						      	<button   class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaCap6" aria-expanded="false" aria-controls="">
+						      	<button   class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaCap6" aria-expanded="false" aria-controls="">
 							        <h5 class="card-title row w-100"><b class="col">➢Populações & Amostras</b><span class="col-auto me-3">Capitulo 2</span></h5>
 							    </button>
-						        <div id="conteudoEstatisticaCap6" class="accordion-collapse collapse " data-bs-parent="#collapseOne">
-							      	<div class="accordion-body">
+						        <div id="conteudoEstatisticaCap6" class="accordion-collapse bg-transparent collapse " data-bs-parent="#collapseOne">
+							      	<div class="accordion-body bg-transparent">
 							      		
-							      		<div id="contInt" class="my-1 accordion-collapse collapse show" data-bs-parent="#conteudoEstatisticaCap6">
+							      		<div id="contInt" class="my-1 accordion-collapse bg-transparent collapse show" data-bs-parent="#conteudoEstatisticaCap6">
 
-							      			<div class="accordion-body">
+							      			<div class="accordion-body bg-transparent">
 							      				<p>bla</p>
 							      			</div>
 							      		</div>
@@ -322,15 +325,15 @@
 						<div class="col-md-12">
 						    <div class="card my-3">
 						      <div class="card-body">
-						      	<button   class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaCap7" aria-expanded="false" aria-controls="">
+						      	<button   class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaCap7" aria-expanded="false" aria-controls="">
 							        <h5 class="card-title row w-100"><b class="col">➢Parâmetros & Estatísticas</b><span class="col-auto me-3">Capitulo 2</span></h5>
 							    </button>
-						        <div id="conteudoEstatisticaCap7" class="accordion-collapse collapse " data-bs-parent="#collapseOne">
-							      	<div class="accordion-body">
+						        <div id="conteudoEstatisticaCap7" class="accordion-collapse bg-transparent collapse " data-bs-parent="#collapseOne">
+							      	<div class="accordion-body bg-transparent">
 							      		
-							      		<div id="contInt" class="my-1 accordion-collapse collapse show" data-bs-parent="#conteudoEstatisticaCap7">
+							      		<div id="contInt" class="my-1 accordion-collapse bg-transparent collapse show" data-bs-parent="#conteudoEstatisticaCap7">
 
-							      			<div class="accordion-body">
+							      			<div class="accordion-body bg-transparent">
 							      				<p>bla</p>
 							      			</div>
 							      		</div>
@@ -343,15 +346,15 @@
 						<div class="col-md-12">
 						    <div class="card my-3">
 						      <div class="card-body">
-						      	<button   class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaCap8" aria-expanded="false" aria-controls="">
+						      	<button   class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaCap8" aria-expanded="false" aria-controls="">
 							        <h5 class="card-title row w-100"><b class="col">➢Tipos de Estudo</b><span class="col-auto me-3">Capitulo 2</span></h5>
 							    </button>
-						        <div id="conteudoEstatisticaCap8" class="accordion-collapse collapse " data-bs-parent="#collapseOne">
-							      	<div class="accordion-body">
+						        <div id="conteudoEstatisticaCap8" class="accordion-collapse bg-transparent collapse " data-bs-parent="#collapseOne">
+							      	<div class="accordion-body bg-transparent">
 							      		
-							      		<div id="contInt" class="my-1 accordion-collapse collapse show" data-bs-parent="#conteudoEstatisticaCap8">
+							      		<div id="contInt" class="my-1 accordion-collapse bg-transparent collapse show" data-bs-parent="#conteudoEstatisticaCap8">
 
-							      			<div class="accordion-body">
+							      			<div class="accordion-body bg-transparent">
 							      				<p>bla</p>
 							      			</div>
 							      		</div>
@@ -364,15 +367,15 @@
 						<div class="col-md-12">
 						    <div class="card my-3">
 						      <div class="card-body">
-						      	<button   class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaCap9" aria-expanded="false" aria-controls="">
+						      	<button   class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaCap9" aria-expanded="false" aria-controls="">
 							        <h5 class="card-title row w-100"><b class="col">➢Tipos de amostra</b><span class="col-auto me-3">Capitulo 2</span></h5>
 							    </button>
-						        <div id="conteudoEstatisticaCap9" class="accordion-collapse collapse " data-bs-parent="#collapseOne">
-							      	<div class="accordion-body">
+						        <div id="conteudoEstatisticaCap9" class="accordion-collapse bg-transparent collapse " data-bs-parent="#collapseOne">
+							      	<div class="accordion-body bg-transparent">
 							      		
-							      		<div id="contInt" class="my-1 accordion-collapse collapse show" data-bs-parent="#conteudoEstatisticaCap9">
+							      		<div id="contInt" class="my-1 accordion-collapse bg-transparent collapse show" data-bs-parent="#conteudoEstatisticaCap9">
 
-							      			<div class="accordion-body">
+							      			<div class="accordion-body bg-transparent">
 							      				<p>bla</p>
 							      			</div>
 							      		</div>
@@ -385,15 +388,15 @@
 						<div class="col-md-12">
 						    <div class="card my-3">
 						      <div class="card-body">
-						      	<button   class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaCap10" aria-expanded="false" aria-controls="">
+						      	<button   class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaCap10" aria-expanded="false" aria-controls="">
 							        <h5 class="card-title row w-100"><b class="col">➢Tipos de dados</b><span class="col-auto me-3">Capitulo 2</span></h5>
 							    </button>
-						        <div id="conteudoEstatisticaCap10" class="accordion-collapse collapse " data-bs-parent="#collapseOne">
-							      	<div class="accordion-body">
+						        <div id="conteudoEstatisticaCap10" class="accordion-collapse bg-transparent collapse " data-bs-parent="#collapseOne">
+							      	<div class="accordion-body bg-transparent">
 							      		
-							      		<div id="contInt" class="my-1 accordion-collapse collapse show" data-bs-parent="#conteudoEstatisticaCap10">
+							      		<div id="contInt" class="my-1 accordion-collapse bg-transparent collapse show" data-bs-parent="#conteudoEstatisticaCap10">
 
-							      			<div class="accordion-body">
+							      			<div class="accordion-body bg-transparent">
 							      				<p>bla</p>
 							      			</div>
 							      		</div>
@@ -406,15 +409,15 @@
 						<div class="col-md-12">
 						    <div class="card my-3">
 						      <div class="card-body">
-						      	<button   class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaCap11" aria-expanded="false" aria-controls="">
+						      	<button   class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoEstatisticaCap11" aria-expanded="false" aria-controls="">
 							        <h5 class="card-title row w-100"><b class="col">➢Níveis de Medição</b><span class="col-auto me-3">Capitulo 2</span></h5>
 							    </button>
-						        <div id="conteudoEstatisticaCap11" class="accordion-collapse collapse " data-bs-parent="#collapseOne">
-							      	<div class="accordion-body">
+						        <div id="conteudoEstatisticaCap11" class="accordion-collapse bg-transparent collapse " data-bs-parent="#collapseOne">
+							      	<div class="accordion-body bg-transparent">
 							      		
-							      		<div id="contInt" class="my-1 accordion-collapse collapse show" data-bs-parent="#conteudoEstatisticaCap11">
+							      		<div id="contInt" class="my-1 accordion-collapse bg-transparent collapse show" data-bs-parent="#conteudoEstatisticaCap11">
 
-							      			<div class="accordion-body">
+							      			<div class="accordion-body bg-transparent">
 							      				<p>bla</p>
 							      			</div>
 							      		</div>
@@ -431,24 +434,24 @@
 
 	<div class="row my-2">
     	<div class="accordion" id="accordionML">
-		  <div class="accordion-item">
-		    <h2 class="accordion-header">
-		      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseML" aria-expanded="true" aria-controls="collapseML">
+		  <div class="accordion-item bg-transparent">
+		    <h2 class="accordion-header bg-transparent">
+		      <button class="accordion-button text-white bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseML" aria-expanded="true" aria-controls="collapseML">
 		       <h1 class=""><i> Machine Learning</i></h1>
 		      </button>
 		    </h2>
-		    <div id="collapseML" class="accordion-collapse collapse" data-bs-parent="#accordionIntCade">
-				<div class="accordion-body">
+		    <div id="collapseML" class="accordion-collapse bg-transparent collapse" data-bs-parent="#accordionIntCade">
+				<div class="accordion-body bg-transparent">
 					<div class="row">
 						
 						<div class="col-md-12">
 						    <div class="card my-3">
 						      <div class="card-body">
-						      	<button   class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#intEstistica" aria-expanded="false" aria-controls="">
+						      	<button   class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#intEstistica" aria-expanded="false" aria-controls="">
 							        <h5 class="card-title row w-100"><b class="col">Estatística</b><span class="col-auto me-3">Tópico 1</span></h5>
 							    </button>
-						        <div id="intEstistica" class="accordion-collapse collapse " data-bs-parent="#accordionML">
-							      	<div class="accordion-body">
+						        <div id="intEstistica" class="accordion-collapse bg-transparent collapse " data-bs-parent="#accordionML">
+							      	<div class="accordion-body bg-transparent">
 							      		
 							      		<div class="my-1"><p class="row"><b class="col">➢Introdução</b><a class="col-auto" href="#t1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"  aria-controls="collapseTwo">Ir para a abordagem</a></p></div>
 

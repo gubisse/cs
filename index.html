@@ -1,283 +1,366 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<meta charset="utf-8">
-	<title>Leonardo Nogueira</title>
-	<link rel = "shortcut icon" type = "imagem/x-icon" href = "img/favicon-16x16.png"/>
-	<link rel="stylesheet" type="text/css" href="estilo.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style type="text/css">
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Cover Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+    	a{
+    		margin: 2px 0 2px 0;
+    	}
     	#object-conteudo{
     		width: 100%;
-			height: 76vh; /* Substitua 0px pela altura do rodapé, se aplicável */
+			height: 89vh; /* Substitua 0px pela altura do rodapé, se aplicável */
 		}
+		btn-cs:hover{
+			background: #ffffff50;
+			color: #fff !important;
+			border-top: #000;
+			border-end: #fff;
+			border-bottom: #fff;
+			border-start: #000;
+		}
+		.btn-cs:hover{			
+			background: #ffffff50;
+			color: #fff !important;
+			border-top: #000;
+			border-end: #fff;
+			border-bottom: #fff;
+			border-start: #000;
+		}
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .cover-container-cs{
+      	max-width: 100em;
+      }
+
+      .img-admin{
+      	border-radius: 50%;
+      	width: 140px;
+
+      }
+      .img-admin:hover{
+      	width: 150px;
+
+      }
+      .logo-cs{
+      	border: solid 1px white;
+	    text-transform: uppercase;
+	    text-align: center;
+      }
+      @media (min-width: 576px){
+	      .logo-cs{
+	      	border: none;
+	      	text-align: left;
+	      	font-size: 32px;
+	      }  
+	      #panel-conteudo{
+	      	margin: 2px;
+	      }    	
+      }
     </style>
-</head>
-<body>
-	<div id="hero" class="hero ">
-		<div class="text-white" >
-			<h2>Gonçalves Ubisse</h2>
-			<h1 class="hero-subtitle"> Casa de Sistemas</h1>
-			<div class="d-flex justify-content-between w-100 bg-light">
-				<div>
-					<a href="#init" class="btn">Inicio</a>
-					<a href="#sistemas" class="btn">Veja os tipos de sistemas</a>
-					<a href="#sobremim" class="btn no-border">Sobre mim</a>
-				</div>	
-				<button id="btn-login-cs" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLogin">CS</button>		
 
+    
+    <!-- Custom styles for this template -->
+    <link href="./css/cover.css" rel="stylesheet">
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+	<header class="mb-auto ">
+		<div class="row justify-content-center">
+			<h3 class="col col-12 col-sm-6 py-3 logo-cs">Casa de sistemas</h3>
+			<nav class="row col-auto col-12 col-sm-6 nav nav-masthead d-flex justify-content-between">
+				<button class=" col-4 col-sm-3 nav-link  active" name="inicio">Inicio</button>
+				<button class=" col-4 col-sm-3 nav-link " name="cs" type="button" data-bs-toggle="modal" data-bs-target="#modalLogin">CS</button>
+				<button class=" col-3 col-sm-3 nav-link " name="admin">Admin</button>
+			</nav>
+		</div>
+	</header>
+
+	<div id="panel-conteudo" style="display: none; margin-top: 5px;">
+
+		<div class="d-flex justify-content-between">					
+			<h4 class="text-uppercase" name="nome-cadeira"></h4>
+			<div>
+				<span class="me-5" name="semestre"></span>
+				<a class="btn btn-cs border-top border-start text-white m-2" href="#">Anotacoes</a>		
 			</div>
 		</div>
+
+		<div class="row mt-2">
+			<object id="object-conteudo"  type="text/html" ></object>			
+		</div>
 	</div>
-	<cs id="aulas" class="aula-section container-fluid" style="display: none;">
-		<div class="m-2">
-			<h1>Aulas</h1>
+	<main class="px-3">
+		<cs id="inicio">
+		    <h1 class="my-5">Bem-vindo à CS</h1>
+		    <p class="lead">Somos muito entusiasmados em recebe-lo e somos muito entusiasmados da tecnologia apaixonados por desenvolvimento de sistemas e pela manutenção eficaz de hardware de ativos informáticos. Nossa jornada profissional é marcada pela dedicação em fornecer soluções inovadoras e eficientes, combinando habilidades técnicas sólidas com uma mentalidade focada em resultados.<br><br><b>Vamos em frente, rumo ao futuro!</b></p>
+		    <p class="lead">
+		      <button name="sobre-cs" class="btn btn-cs border-top border-start text-white my-5 text-uppercase">Saber mais sobre CS</button>
+		    </p>  		
+		</cs>
+
+		<cs id="sobre-cs">
+			<p class="lead my-5">
+				Seja bem-vindo ao nosso mundo, onde a paixão pela tecnologia e a dedicação ao desenvolvimento de sistemas e manutenção de ativos informáticos se fundem em uma jornada profissional marcada por inovação e eficiência.
+				<br><br>
+				Somos apaixonados pela arte da tecnologia, impulsionados por um entusiasmo inabalável em explorar suas possibilidades infinitas. Cada linha de código que escrevemos, cada componente de hardware que ajustamos, é uma expressão do nosso compromisso inabalável em oferecer soluções que não apenas resolvem problemas, mas que também moldam o futuro.
+				<br><br>
+				Nossa jornada profissional é tecida com fios de dedicação incansável. Desde o primeiro momento, nos comprometemos a fornecer soluções que transcendem o convencional, combinando habilidades técnicas sólidas com uma mentalidade obstinada focada em resultados tangíveis. Para nós, não se trata apenas de criar sistemas, mas sim de criar experiências que transformam positivamente a vida das pessoas e impulsionam o crescimento dos negócios.
+				<br><br>
+				Cada desafio que enfrentamos é uma oportunidade para inovar, para encontrar novas maneiras de superar obstáculos e alcançar novos patamares de excelência. Não aceitamos nada menos do que a perfeição, e essa busca incessante pela excelência é o que nos impulsiona a ir além, a explorar territórios desconhecidos e a desafiar constantemente os limites do possível.
+				<br><br>
+				Somos mais do que simplesmente profissionais de tecnologia; somos criadores, visionários e solucionadores de problemas. Estamos aqui para fazer a diferença, para deixar nossa marca no mundo da tecnologia e para inspirar outros a seguirem o mesmo caminho de dedicação e paixão.
+				<br><br>
+				Então, junte-se a nós nesta jornada emocionante enquanto continuamos a desbravar novos horizontes, a desafiar convenções e a transformar sonhos em realidade. O futuro da tecnologia está em nossas mãos, e estamos prontos para moldá-lo da melhor forma possível.
+				<br><br>
+				<b>Vamos em frente, rumo ao futuro!</b>
+			</p>
+		</cs>
+
+		<cs id="cs">
 			<div class="d-flex justify-content-between">
-				<div class="dropdown">
-					<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-					Semestre
-					</button>
-					<ul class="dropdown-menu w-100" id="btn-semestre">
-						<li name="a11" class="d-flex justify-content-between dropdown-item"></span>Primeiro<span>Ano1</span></li>
-						<li name="a12" class="d-flex justify-content-between dropdown-item"><span>Segundo</span><span>Ano1</span></li>
-						<li name="a21" class="d-flex justify-content-between dropdown-item"><span>Terceiro</span><span>Ano2</span></li>
-						<li name="a22" class="d-flex justify-content-between dropdown-item"><span>Quarto</span><span>Ano2</span></li>
-						<li name="a31" class="d-flex justify-content-between dropdown-item"><span>Quinto</span><span>Ano3</span></li>
-						<li name="a32" class="d-flex justify-content-between dropdown-item"><span>Sexto</span><span>Ano3</span></li>
-						<li name="a41" class="d-flex justify-content-between dropdown-item"><span>Setmo</span><span>Ano4</span></li>
-						<li name="a42" class="d-flex justify-content-between dropdown-item"><span>Oitavo</span><span>Ano4</span></li>
-					</ul>
-				</div>
-				<div class="" id="link-cadeira-aula">
+				<h1 >Aulas</h1>
+				<h1><span name="nome-restricao"></sapn></h1>
+			</div>
+		    <div class="dropdown ">
+				<btn-cs class="w-100 btn border-top border-start text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Mencine o semestre
+				</btn-cs>
+				<ul class="dropdown-menu w-100" id="btn-semestre">
+					<li name="a11" class="d-flex justify-content-between dropdown-item"></span>Primeiro<span>Ano1</span></li>
+					<li name="a12" class="d-flex justify-content-between dropdown-item"><span>Segundo</span><span>Ano1</span></li>
+					<li name="a21" class="d-flex justify-content-between dropdown-item"><span>Terceiro</span><span>Ano2</span></li>
+					<li name="a22" class="d-flex justify-content-between dropdown-item"><span>Quarto</span><span>Ano2</span></li>
+					<li name="a31" class="d-flex justify-content-between dropdown-item"><span>Quinto</span><span>Ano3</span></li>
+					<li name="a32" class="d-flex justify-content-between dropdown-item"><span>Sexto</span><span>Ano3</span></li>
+					<li name="a41" class="d-flex justify-content-between dropdown-item"><span>Setmo</span><span>Ano4</span></li>
+					<li name="a42" class="d-flex justify-content-between dropdown-item"><span>Oitavo</span><span>Ano4</span></li>
+				</ul>
+			</div>
+			<div class="d-flex justify-content-between">				
+				<div class="" name="link-cadeira-aula">
 				</div>	
-			</div>
-			<div id="panel-conteudo" class="mt-3" style="display: none;">
-				<div class="d-flex justify-content-between">					
-					<h2 class="text-uppercase" name="nome-cadeira"></h2>
-					<div>
-						<span class="me-5" name="semestre"></span>
-						<a class="btn btn-primary m-2" href="#">Anotacoes</a>		
-					</div>
-				</div>
-				<div class="row mt-2 opacity-5">
-					<object id="object-conteudo"  type="text/html" ></object>			
-				</div>
-			</div>
+			</div>		
+		</cs>
 
-		</div>
-	</cs>
-	<cs class="work-section" id="init">
-		<div class="container">
-			<h3>Meus trabalhos</h3>
-			<div class="works-wrapper row">
-				<div class="work one">
-					<div class="work-cover">
-						<div class="website-name">Designs responsivos</div>
-						<a href="#" class="website-link"></a>
-					</div>
+		<cs id="admin" class="border my-2">
+			<h1 class="mb-3">Gonçalves Ubisse</h1>
+			<p class="lead">Sou Administrador da casa de sistemas desde 2023. Estou sempre para aprender novas tecnologias, desenvolvendo. Sou finalista em licenciatura no Tecnologias de informacao em UCM -FENG. Minha esperiencia é desenvolver sistemas.</p>
+			<div class="lead row">	
+				<h3 class="my-5">Entre em contato</h3>
+				<div class="col-md">
+					<img class="img-admin" src="img/perfil-fundo-brancado.jpeg" >
+					<p>&copy 2024</p>
 				</div>
-				<div class="work two">
-					<div class="work-cover">
-						<div class="website-name">Desenvolvimento Web</div>
-						<a href="#" class="website-link"></a>
-					</div>
-				</div>
-				<div class="work three">
-					<div class="work-cover">
-						<div class="website-name">Sites Comerciais</div>
-						<a href="#" class="website-link"></a>
-					</div>
-				</div>
-				<div class="work four">
-					<div class="work-cover">
-						<div class="website-name">Sites Pessoais</div>
-						<a href="#" class="website-link"></a>
-					</div>					
-				</div>
-				<div class="work five">
-					<div class="work-cover">
-						<div class="website-name">Sites Empresariais</div>
-						<a href="#" class="website-link"></a>
-					</div>
-				</div>
-				<div class="work six">
-					<div class="work-cover">
-						<div class="website-name">Aplicativos Mobile</div>
-						<a href="#" class="website-link"></a>
+				<div class="col-md-auto">				
+					<div class="d-grid">
+						<a href="mailto:goncalvesalbertoubisse@gmail.com" class="w-100"><button class="bg-transparent text-start text-info w-100">
+							<img src="img/e-mail.svg" width="50px">goncalvesalbertoubisse@gmail.com
+						</button></a>
+						<a href="https://api.whatsapp.com/send?phone=258867029608" ><button class="bg-transparent text-start text-success w-100">
+							<img src="img/whatsapp.svg" width="50px">+258 867029383
+						</button></a>
+						<a id="btn-copy-phone" ><button class="bg-transparent text-start text-success w-100">
+							<img src="img/call-dropped-rounded-svgrepo-com.svg" width="50px"><span name="phone-a-copiar">+258 845109383</span>
+						</button></a>
 					</div>
 				</div>
 			</div>
-		</div>		
-	</cs>
-	<cs  id="sistemas" class="sistema-section">
-		<div class="container">
-			<h3>Sistemas que fazemos</h3>
-			<div class="works-wrapper">
 
-			</div>
-		</div>
-	</cs>
+		</cs>
+		<cs id="inaxistencia">
+			<h1 class="my-5">...Error...</h1>
+			<p class="lead">Do momento nao podemos atender, podes tentar novamente mais tarde.</p>
+			<p class="lead">
+			<a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white my-5">Contactar</a>
+			</p>  		
+		</cs>
+	</main>
 
-	<div id="sobremim" class="about-section">
-		 <div class="container columns-container">
-		 	<div class="column">
-		 		<img src="img/perfil-fundo-brancado.jpeg" alt="minhafoto" class="profile-pic">
-		 	</div>
-		 	<div class="column">
-		 		<h3>Sobre mim</h3>
-		 		<p class="about-paragraph">Sou um entusiasta da tecnologia apaixonado por desenvolvimento de sistemas e pela manutenção eficaz de hardware de ativos informáticos. Minha jornada profissional é marcada pela dedicação em fornecer soluções inovadoras e eficientes, combinando habilidades técnicas sólidas com uma mentalidade focada em resultados.</p>
-		 		<div class="social-wrapper">
-
-		 			<a href="https://web.facebook.com/profile.php?id=100089562308270&locale=pt_BR" class="social-icon"><img src="img/facebook-svgrepo-com.svg" alt="facebook"></a>
-					<a href="https://api.whatsapp.com/send?phone=258867029608" class="social-icon">
-						<img src="img/whatsapp-svgrepo-com.svg">
-					</a>
-		 		<!--
-		 			<a href="#" class="social-icon"><img src="img/instagram.svg" alt="instagram"></a>
-		 			<a href="#" class="social-icon"><img src="img/linkedin.svg" alt="linkedin"></a>
-		 		-->
-		 		</div>
-		 	</div>
-		 </div>
-	</div>
-	<div id="contact" class="contact-section">
-		<div class="container">
-			<h3 class="contact-heading">Entre em contato</h3>
-			<div class="contact-links-wrapper">
-				<a href="mailto:leojunio007@gmail.com" class="contact-link">
-					<img src="img/e-mail.svg">goncalvesalbertoubisse@gmail.com
-				</a>
-				<a href="https://api.whatsapp.com/send?phone=258867029608" class="contact-link">
-					<img src="img/whatsapp.svg">+258 867029383
-				</a>
-			</div>
-			<div class="end">
-				<a href="#hero">UP</a>
-				<p>Gonçalves Ubisse &copy; | Todos os direitos reservados.</p>
-			</div>
-		</div>
-	</div>	
-
-
-
-	<modal>
+  	<modal>
 				<!-- Button trigger modal -->
 		
 
 		<!-- Modal -->
-		<div class="modal fade" id="modalLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-		  <div class="modal-dialog modal-dialog-centered">
-		    <div class="modal-content">
+		<div class="modal fade " id="modalLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered ">
+		    <div class="modal-content bg-dark">
 		      <div class="modal-header">
 		        <h1 class="modal-title fs-5" id="staticBackdropLabel">Restricao</h1>
 		        <button id="fechar-modal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 		      </div>
-		      <div class="modal-body">
-		      	<div id="panel-r">
-		      		<label>restricao</label>
+		      <div class="modal-body d-flex justify-content-between">
+		      	<div id="panel-r" class="w-100 me-2">
+		      		<label>nome</label>
 		      		<input type="text" name="nome-restricao" class="form-control" required>
 		      	</div>
-		      	<a href="#aulas"  type="button" data-bs-dismiss="modal" aria-label="Close">Confirmar</a>
+		      	<button name="auth" class="text-white bg-transparent opacity-5" data-bs-dismiss="modal">Confirmar</button>
 		      </div>
 		      <div class="modal-footer d-flex justify-content-between">
 		      	<span name="span_msg_login_cs"></span>		      	
-		      	<p>Contacte ao admin da CS</p>
+		      	<button name="admin" class=" text-white bg-transparent opacity-5" data-bs-dismiss="modal">Contacte ao admin da CS</button>
 		      </div>
 		    </div>
 		  </div>
 		</div>
 	</modal>
-	<script type="text/javascript">
 
-			var url = window.location.href;
-			console.log(url);
+  <footer class="mt-auto text-white-50">
+    <p>Casa de sistemas &copy 2024 . Todos os direitos recerva</p>
+  </footer>
+</div>
 
+  </body>
 
-		let sessao=localStorage.getItem('nomerestricao');
-		let fragmento=localStorage.getItem('fragmento');
-		let nome_autorizados=[
-			"P.Bertuzzi",
-			"G.Ubisse",
-			"L.Quetane",
-			"S.Mendes",
-			"S.Sithole",
-			"I.Chibique",
-			"F.Melvin",
-			"D.Alberto",
-			"J.Faiane",
-			"M.Mutombo"
-			];
-		if(sessao!=null){
-			document.getElementById(fragmento).style.display="block";
-			document.getElementById('btn-login-cs').style.display="none";	
-		}
+  <script type="text/javascript">
+  	//DESATIVAR TODOS CSs
+	document.querySelectorAll('cs').forEach(cs => {
+		cs.style.display="none";
+		cs.parentNode.parentNode.classList.remove('cover-container-cs');
+		cs.parentNode.parentNode.classList.add('cover-container');
+	});
 
-		document.querySelectorAll('a').forEach(link => {
-		    link.addEventListener('click', function(event) {
-		    	var v=link.href;
-		    	if(!(v.includes('html'))){
-					if(v!=''){
-						var partes = v.split('#');
-						var urlBase = partes[0]; // "https://www.example.com/pagina"
-						fragmento = partes[1]; // "secao"
-					}
+	let sessao=localStorage.getItem('nomerestricao');
+	let fragmento=localStorage.getItem('fragmento');
+	let nome_autorizados=[
+		"P.Bertuzzi",
+		"G.Ubisse",
+		"L.Quetane",
+		"S.Mendes",
+		"S.Sithole",
+		"I.Chibique",
+		"F.Melvin",
+		"D.Alberto",
+		"J.Faiane",
+		"M.Mutombo"
+		];
+	if(sessao!=null){
+		document.querySelectorAll('button').forEach(button => {
+			button.classList.remove('active');
+			if(button.getAttribute('name')==='cs'){
+				button.removeAttribute('data-bs-target');
+				button.removeAttribute('data-bs-toggle');
+			}
+		});
+		document.querySelector('button[name="cs"]').classList.add('active');
 
-					document.querySelectorAll('cs').forEach(cs => {
-						cs.style.display="none";
-					});
+		document.getElementById('cs').style.display="block";
+		
+	}
 
-					if (fragmento==='aulas') {
-						//var nr=document.querySelector('input[name="nome-restricao"]').value;
-						// Supondo que 'nr' seja o nome a ser verificado
-						let nr = "G.Ubisse"; // Aqui você pode definir o nome que deseja verificar
+	//OS LINKs
 
-						// Verifica se 'nr' está na lista 'nome_autorizados'
-						if((document.getElementById('panel-r').style.display=="none")==true){
-							document.getElementById(fragmento).style.display="block";
-							document.getElementById('btn-login-cs').style.display="none";						
-							localStorage.setItem('nomerestricao', nr);
-							localStorage.setItem('fragmento', fragmento);
-						console.log(document.getElementById('panel-r').style.display=="none");
-						}else if(nome_autorizados.includes(nr)) {
-						    // Se 'nr' estiver na lista, oculta o elemento correspondente ao fragmento
-						    // Suponha que 'link' seja a referência para o elemento <a> que você deseja modificar
-							link.removeAttribute('href');
-							link.innerHTML="Entrar";
-							document.getElementById('panel-r').style.display="none";
-						    document.querySelector('span[name="span_msg_login_cs"]').style.color="green";
-						    document.querySelector('span[name="span_msg_login_cs"]').innerHTML="confirmado";
-						    
-						}else {
-						    document.querySelector('span[name="span_msg_login_cs"]').style.color="red";
-						    document.querySelector('span[name="span_msg_login_cs"]').innerHTML="não está na lista";
-						}
+	
 
-					}else if(fragmento==='init'){
-						document.querySelectorAll('cs').forEach(cs => {
-							cs.style.display="block";
-							if(sessao==null){
-								document.getElementById("aulas").style.display="none";
-								document.getElementById('btn-login-cs').style.display="block";	
-							}
-						});
-						
-					}else if(fragmento==='sistemas'){
-						document.querySelectorAll('cs').forEach(cs => {
-							cs.style.display="none";
-						});
-						document.getElementById(fragmento).style.display="block";
-						
-					}
-		        // Por exemplo, se você quiser evitar o comportamento padrão de seguir o link
-		        event.preventDefault();
+	// Texto que será copiado
+	const textoParaCopiar = document.querySelector('span[name="phone-a-copiar"]').innerText; // Seu número de telefone
+
+	// Adiciona um evento de clique ao botão
+	document.getElementById('btn-copy-phone').addEventListener('click', function() {
+	// Cria um elemento de input para armazenar o texto
+	const input = document.createElement('input');
+	input.setAttribute('value', textoParaCopiar);
+	document.body.appendChild(input);
+
+	// Seleciona e copia o texto
+	input.select();
+	document.execCommand('copy');
+
+	// Remove o elemento de input
+	document.body.removeChild(input);
+
+	// Mensagem de confirmação
+	alert('Texto copiado para a área de transferência!');
+	});
+
+	//PRESTAR TODOS OS BUTTONs
+	let idAnte="";
+  	document.querySelectorAll('button').forEach(button => {
+	    button.addEventListener('click', function(event) {
+
+	    	var click = button.getAttribute('name');
+
+			document.querySelectorAll('button').forEach(butto => {
+				butto.classList.remove('active');
+			});
+			button.classList.add('active');
+
+			document.getElementById('panel-conteudo').style.display="none";
+			document.querySelector('main').style.display="block";
+
+	    	document.querySelectorAll('cs').forEach(cs => {
+	    		cs.style.display="none";
+				cs.parentNode.parentNode.classList.remove('cover-container-cs');
+				cs.parentNode.parentNode.classList.add('cover-container');
+
+			});
+
+	    	if(click==="inicio"){
+	    		//document.getElementById('inicio').style.display="block";
+	    	}else if(click==="cs"){
+
+				//document.getElementById('cs').style.display="block";				
+				//document.querySelector('span[name="nome-restricao"]').innerHTML=sessao;
+
+	    	}else if(click==="admin"){
+	    		//document.getElementById('admin').style.display="block";	    		
+	    	}else if(click==='auth'){
+	    		var nr=document.querySelector('input[name="nome-restricao"]').value;
+
+				// Verifica se 'nr' está na lista 'nome_autorizados'
+				if(nome_autorizados.includes(nr)){
+					alert(nome_autorizados);
+					/*
+					document.getElementById(fragmento).style.display="block";
+					document.getElementById('btn-login-cs').style.display="none";						
+					localStorage.setItem('nomerestricao', nr);
+					localStorage.setItem('fragmento', fragmento);
+					*/
+				//console.log(document.getElementById('panel-r').style.display=="none");
+				}else {
+					alert(nome_autorizados);
+					/*
+				    document.querySelector('span[name="span_msg_login_cs"]').style.color="red";
+				    document.querySelector('span[name="span_msg_login_cs"]').innerHTML="não está na lista";
+				    */
 				}
 
+	    	}
+	    	if(!(click===null)){
+	    		idAnte = click;
+				document.getElementById(click).style.display="block";
 
-		        
-		    });
-		});
-		
-		var link="";
+	    	}else{	    		
+				document.getElementById(idAnte).style.display="block";
+	    	}
+	        // Exibir mensagem quando um botão é clicado
+	    });
+	});
+	var link="";
 
 		var botoesSemestre = document.querySelectorAll('#btn-semestre > *');
 		let  contacad=-1;
@@ -311,7 +394,7 @@
 		    	}else if(botao.getAttribute('name')=='a42'){
 					contacad= cadeirasA42.length;		    		
 		    	}
-		    	document.getElementById('link-cadeira-aula').innerText="";
+		    	document.querySelector('div[name="link-cadeira-aula"]').innerText="";
 				for (var i = 0; i < contacad; i++) {
 				    // Cria o elemento <a>
 				    var link = document.createElement('a');
@@ -351,7 +434,7 @@
 				    link.addEventListener('click', function() {
 				        // Aqui você pode colocar o código que deseja executar quando o link for clicado
 
-						document.getElementById('link-cadeira-aula').parentNode.parentNode.id=this.textContent;
+						//document.querySelector('div[name="link-cadeira-aula"]').parentNode.parentNode.id=this.textContent;
 
 						/**
 						 * ==============================================
@@ -359,7 +442,6 @@
 						 * ==============================================
 						 */
 				    	let posicao=-1;
-						document.getElementById('panel-conteudo').style.display="block";
 						
 
 						if(verificarPosicao(cadeirasA11,this.textContent)!=null){
@@ -372,47 +454,49 @@
 
 
 						if(this.textContent=='IA'){
-							document.querySelector('h2[name="nome-cadeira"]').innerHTML="Inteligencia Artificial";
+							document.querySelector('h4[name="nome-cadeira"]').innerHTML="Inteligencia Artificial";
 							document.querySelector('span[name="semestre"]').innerHTML="Docente: Mohammad Lorgat ";
 						}else if(this.textContent=='AIS'){
-							document.querySelector('h2[name="nome-cadeira"]').innerHTML="Arquitetura e Integracao de Sistema";
+							document.querySelector('h4[name="nome-cadeira"]').innerHTML="Arquitetura e Integracao de Sistema";
 							document.querySelector('span[name="semestre"]').innerHTML="Docente: Alberto Vilanculos e";
 						}else if(this.textContent=='GP'){
-							document.querySelector('h2[name="nome-cadeira"]').innerHTML="Gestao de Projectos";
+							document.querySelector('h4[name="nome-cadeira"]').innerHTML="Gestao de Projectos";
 							document.querySelector('span[name="semestre"]').innerHTML="Docente: Peidade Nogueira";
 						}else if(this.textContent=='SC'){
-							document.querySelector('h2[name="nome-cadeira"]').innerHTML="Seguranca Corporativa";
+							document.querySelector('h4[name="nome-cadeira"]').innerHTML="Seguranca Corporativa";
 							document.querySelector('span[name="semestre"]').innerHTML="Docente: Watson Chanaka ";
 						}else if(this.textContent=='TV'){
-							document.querySelector('h2[name="nome-cadeira"]').innerHTML="Testagem e Validacao";
+							document.querySelector('h4[name="nome-cadeira"]').innerHTML="Testagem e Validacao";
 							document.querySelector('span[name="semestre"]').innerHTML="Docente: Vasco Macicame e ";
 						}
 						var url ="./portifoly/aulas/"+this.textContent.toLowerCase()+".html";
-/*
+
 						fetch(url)
 						  .then(response => {
 						    if (response.ok) {
-						    	*/
+						    	
+
+								document.getElementById('panel-conteudo').style.display="block";
+								document.getElementById('panel-conteudo').parentNode.classList.remove('cover-container');
+								document.getElementById('panel-conteudo').parentNode.classList.add('cover-container-cs');
+								
 								document.getElementById('object-conteudo').setAttribute('data',url);
-								/*
+								document.querySelector('main').style.display="none";
+								
 						    } else {
 						    	
-						      console.log('O arquivo ',+this.textContent.toLowerCase()+'.html, não existe na pasta portifoly/aulas');
+						      alert('Nao podes entrar na cadeira');//O arquivo ',+this.textContent.toLowerCase()+'.html, não existe na pasta portifoly/aulas');
 						    }
 						  })
 						  .catch(error => console.error('Erro ao verificar o arquivo:', error));
 
-*/
-						console.log();
-
-
 				    });
 
 				    // Adiciona o link ao container
-				    document.getElementById('link-cadeira-aula').appendChild(link);
+				   document.querySelector('div[name="link-cadeira-aula"]').appendChild(link);
 
 				    // Define a classe do container
-				    document.getElementById('link-cadeira-aula').setAttribute('class', "d-flex justify-content-end w-100");
+				    document.querySelector('div[name="link-cadeira-aula"]').setAttribute('class', "d-flex justify-content-end w-100");
 				}
 
 		    });
@@ -430,8 +514,8 @@
 		}
 
 
+  </script>
 
-	</script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
