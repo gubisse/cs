@@ -331,8 +331,7 @@
 	    	if(click==="inicio"){
 	    		//document.getElementById('inicio').style.display="block";
 	    	}else if(click==="cs"){
-s
-
+			
 	    	}else if(click==="admin"){
 	    		//document.getElementById('admin').style.display="block";	    		
 	    	}else if(click==='auth'){
@@ -358,9 +357,9 @@ s
 				sessao=null;				
 	    		click="inicio";
 	    		nameBTN=click;
-	    	}
-			document.getElementById(click).style.display="block";
-			document.querySelector('button[name="'+nameBTN+'"]').classList.add('active');
+		}
+		document.getElementById(click).style.display="block";
+		document.querySelector('button[name="'+nameBTN+'"]').classList.add('active');
 	    });
 	});
 	var link="";
