@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Ubisse, Cada de sistemas">
+    <meta name="generator" content="CS">
+    <title>Dia dos trabalhadores</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+
+    <style type="text/css">
+       @keyframes blink {
+            0% {
+                opacity: 1;
+                background-image: linear-gradient(45deg, #ff6600, #ffcc90);
+            }
+            50% {
+                opacity: 0;
+                background-image: none;
+            }
+            100% {
+                opacity: 1;
+                background-image: linear-gradient(45deg, #ff6600, #ffcc00);
+            }
+        }
+
+      .piscar-finito{
+            animation: blink 1.5s 2;
+      }
+      .piscar-infinito{
+            animation: blink 1s infinite;
+      }
+    </style>
+  </head>
+  <body class="" style="background-color: gray ;background-repeat: no-repeat; background-size: cover;">
+    <a class="btn fixed-top btn-secondary" name="baixo">Ir para baixo</a>
+    <a class="btn fixed-bottom btn-secondary" name="">Ir para cima</a>
+<main class="">
+
+  <div id="myCarousel" class="carousel slide " data-bs-ride="carousel">
+
+    <div class="carousel-indicators bg-dark" name="btnCarro">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" name="carro">
+      <div class="carousel-item active ">
+        <svg class="bd-placeholder-img"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="./img/fundo1.png" style="opacity:0.5" /></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start text-dark"  name="0">
+            <h1 class="mb-5 text-uppercase">Parabéns pelo Dia dos Trabalhadores!</h1>
+            <p class="mt-5">Hoje é um dia especial para reconhecer e valorizar o trabalho de todos. Agradecemos a dedicação e o esforço de cada um de vocês.</p>
+            <p><a class="btn btn-primary w-100" name="desejar">Comece a desejar</a></p>
+            
+            <button class="btn btn-secondary w-100">Ver a imagem</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" name="carorB">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="./img/trs2.jpeg" style="opacity:0.5" /></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-dark" name="1">
+            <h1 class="mb-5 text-uppercase">Primeiro dia de maio.</h1>
+            <p class="mt-5">Dia internacional dos trabalhadores.</p>
+            <p><a class="btn btn-primary w-100" name="desejar">Comece a desejar</a></p>
+
+            <button class="btn btn-secondary w-100">Ver a imagem</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg  class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <img src="./img/processador.jpeg" style="opacity:0.5" />
+        </svg>
+
+        <div class="container ">
+          <div class="carousel-caption text-end text-dark" name="2">
+            <h1 class="mb-5 text-uppercase">Comemoração mundial.</h1>
+            <p class="mt-5">Visto que é uma celebridade que está afetar todo o mundo, portanto devemos monstrar o que fazemos ao mundo.</p>
+            <p><a class="btn btn-primary w-100" name="desejar">Comece a desejar</a></p>
+
+            <button class="btn btn-secondary w-100">Ver a imagem</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Proximo</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div id="desejar" class="container marketing" >
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row" style="background-image: url('./img/fundoMain.jpeg') ;background-repeat: no-repeat; background-size: cover;">
+      <div class="col-lg-4 border p-2 position-relative"  style="height: 450px">
+        <div class="position-absolute  top-0 start-50 translate-middle-x">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./img/docentes.jpeg">
+          <h2 class="fw-bold">Docente</h2>
+      </div>
+        <div class="m-3 position-absolute top-50 bg-body" >
+          <p>Parabéns a todos os docentes neste Dia do Trabalhador!
+            <a type="button" name="modeloMsgDocente" data-bs-toggle="modal" data-bs-target="#modeloMsgDocente">Ler mais</a></p>
+          
+        </div>
+        <p class="position-absolute bottom-0"><a class="w-100 btn btn-secondary" name="vdocentes">Verificar os docentes</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 border p-2 position-relative"  name="painelDiscentes"  style="height: 450px">
+        <div class="position-absolute top-0 start-50 translate-middle-x">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./img/discente.jpeg">
+        <h2 class="fw-bold">Discente</h2>
+      </div>
+        <div class="m-3 position-absolute top-50 bg-body">
+          <p>Registe-se se for estudante, como uma forma de se parabenizar pelo dia dos trabalhadores, o estudante faz parte do papel de um trabalhador...!
+            <a type="button" name="modeloMsgDiscente" data-bs-toggle="modal" data-bs-target="#modeloMsgDiscente">Ler mais</a></p>
+          <div name="discentes" class="d-flex justify-content-between">
+            <input type="text" name="nome" placeholder="Nome aqui..." class="form-control">
+            <input type="submit" value="Desejar" class="btn btn-primary">
+          </div>
+          
+        </div>
+        <p class="position-absolute bottom-0"><a class=" btn btn-secondary" name="vdiscentes">Verificar os discentes</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 border p-2 position-relative" name="painelDesejados"  style="height: 450px">
+          <div class="position-absolute top-0 start-50 translate-middle-x">
+            
+            <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./img/desejo.jpeg">
+            <h2 class="fw-bold">Desejar um feliz dia</h2>
+          </div>
+        <div class="m-3 position-absolute top-50 bg-body ">
+          <p>Apenas primeiro nome basta, isso serve comoo uma maneira de desejar um feliz dia dos trabalhadores, para a sua companeira ou o seu companheiro.</p>
+          <div name="desejados" class="d-flex justify-content-between ">
+            <input type="text" name="nome" placeholder="Nome aqui..." class="form-control">
+            <input type="submit" value="Desejar" class="btn btn-primary">
+          </div>
+          
+        </div>
+        <p class="position-absolute bottom-0"><a class="w-100 btn btn-secondary" name="vdesejados">Verificar os desejados</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div id="vdocentes" class="pt-5 row featurette" hidden style="background-image: url('./img/fundoDocente1.jpeg') ;background-repeat: no-repeat; background-size: cover;">
+      <div class="col-md-7 text-white">
+        <h2 class="fw-bold">Feliz ao docente...!</h2>
+
+        <div id="listadocentes" style="max-height: 60vh; overflow-y: auto; position: sticky; top: 10px; z-index: 1;"> 
+          Espere um momento, isso nao deve demorar ...
+
+        </div>
+      </div>
+      <div class="col-md-5">
+          <img  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"  src="./img/docentes.jpeg" width="500">
+
+      </div>
+    </div>
+
+    <div id="vdiscentes" class="pt-5 row featurette" hidden style="background-image: url('./img/fundoDiscente1.jpeg') ;background-repeat: no-repeat; background-size: cover;">
+      <div class="col-md-7 order-md-2 text-white" >
+        <h2 class="fw-bold">Feliz ao discente...!</h2>
+
+        <div id="listadiscentes"  style="max-height: 60vh; overflow-y: auto; position: sticky; top: 10px; z-index: 1;"> 
+          Espere um momento, isso nao deve demorar ...
+        </div>
+      </div>
+      <div class="col-md-5 order-md-1">
+          <img  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"  src="./img/discentes.jpeg" width="500">
+
+      </div>
+    </div>
+
+    <div id="vdesejados" class="pt-5 row featurette" hidden style="background-image: url('./img/fundoDesejado.jpeg') ;background-repeat: no-repeat; background-size: cover;">
+      <div class="col-md-7 text-white">
+        <h2 class="fw-bold">Feliz o desejado...!</h2>
+
+        <div id="listadesejados" style="max-height: 60vh; overflow-y: auto; position: sticky; top: 10px; z-index: 1;"> 
+          Espere um momento, isso nao deve demorar ...
+        </div>
+      </div>
+      <div class="col-md-5">        
+          <img  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"  src="./img/desejo.jpeg" width="500">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer id="baixo" class="container">
+    <p>&copy; 2023–2024 CS, Inc. &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+  </footer>
+
+
+</main>
+<!-- Button trigger modal -->
+<button hidden type="button" name="modeloConf" data-bs-toggle="modal" data-bs-target="#modeloConf"></button>
+<!-- Modal -->
+<div class="modal" id="modeloConf" tabindex="-1" data-bs-backdrop="static">
+  <div class="modal-dialog modal-fullscreen-md-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" name="titulo"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>A Casa de Sistemas agradece imensamente por seus votos de um feliz Dia dos Trabalhadores! Nosso time está extremamente grato por ser reconhecido neste dia especial. É uma honra para nós fazer parte de uma comunidade trabalhadora dedicada ao progresso e à inovação. Agradecemos pelo reconhecimento do nosso trabalho árduo e comprometimento com a excelência. Estamos comprometidos em continuar oferecendo soluções de qualidade e contribuindo para o avanço da tecnologia em nossa área. Obrigado mais uma vez e desejamos a todos um excelente Dia dos Trabalhadores, repleto de realização e sucesso!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Certo</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal" id="modeloMsgDocente" tabindex="-1" data-bs-backdrop="static">
+  <div class="modal-dialog modal-fullscreen-md-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" name="titulo"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p> Vocês são os verdadeiros arquitetos do conhecimento, moldando mentes e inspirando gerações. Seu compromisso incansável com a educação é uma luz que guia o caminho dos nossos jovens para um futuro brilhante. Em nome de toda a comunidade, agradecemos por sua dedicação, paixão e sacrifício. Que este dia seja uma celebração merecida do seu trabalho árduo e uma lembrança do impacto transformador que vocês têm em nossas vidas. Feliz Dia do Trabalhador, queridos professores e professoras.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Certo</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal" id="modeloMsgDiscente" tabindex="-1" data-bs-backdrop="static">
+  <div class="modal-dialog modal-fullscreen-md-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" name="titulo"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Parabéns a todos os discentes neste Dia do Trabalhador! Vocês são a força motriz por trás de cada conquista acadêmica, dedicando-se incansavelmente ao aprendizado e crescimento pessoal. Seu compromisso com a educação é inspirador e demonstra um desejo genuíno de alcançar grandes objetivos. Que este dia seja uma celebração do seu esforço e dedicação, e que vocês continuem a trilhar o caminho do sucesso com determinação e entusiasmo. Vocês são o futuro e estamos orgulhosos de cada passo que dão em direção a ele. Feliz Dia do Trabalhador, queridos alunos e alunas!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Certo</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="module">
+
+    //====================================
+    //INICIALIZANDO A CONEXAO COM FIREBASE
+    //====================================
+
+    //Importacao do que precisamos trabalhar
+    //--------------------------------------
+    import {initializeApp} from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
+    import {getDatabase,get,ref,set,child} from "https://www.gstatic.com/firebasejs/9.1.0/firebase-database.js";
+    import {getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.1.0/firebase-auth.js";
+    import {getStorage,getDownloadURL, ref as storageRef, uploadBytes } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-storage.js";
+
+      const firebaseConfig = {
+          apiKey: "AIzaSyAZZtf0byQv9USPR6DoScnA2j7DRqWJtn8",
+          authDomain: "aval-12f90.firebaseapp.com",
+          databaseURL: "https://aval-12f90-default-rtdb.asia-southeast1.firebasedatabase.app",
+          projectId: "aval-12f90",
+          storageBucket: "aval-12f90.appspot.com",
+          messagingSenderId: "270980945421",
+          appId: "1:270980945421:web:eaee7dd61861112db72744",
+          measurementId: "G-9BPMM7C915"
+       };
+       
+       // Inicialize o Firebase
+      var app=initializeApp(firebaseConfig);
+      var db=getDatabase(app);
+      var storage = getStorage(app);
+      var auth = getAuth(app);
+
+
+      var listaDoc = document.getElementById('listadocentes')
+      var listaDis = document.getElementById('listadiscentes')
+      var listaDes = document.getElementById('listadesejados')
+
+      var docentes  = [
+        {nome:"mlorgat",academico:"MSc",curso:"IT",local:"ucm-feng"}, 
+        {nome:"wchanaka",academico:"MSc",curso:"IT",academico:"",curso:"",local:"ucm-feng"}, 
+        {nome:"vmacicame",academico:"Eng",curso:"IT",local:"ucm-feng"}, 
+        {nome:"barao",academico:"Eng",curso:"IT",local:"ucm-feng"}, 
+        {nome:"LICHIVE",academico:"",curso:"",local:"ucm-feng"}, 
+        {nome:"PHIRI",academico:"",curso:"",local:"ucm-feng"}, 
+        {nome:"GEBALA",academico:"",curso:"",local:"ucm-feng"}, 
+        {nome:"VILANCULOS",academico:"Eng",curso:"IT",local:"ucm-feng"}, 
+        {nome:"PIEDADE",academico:"MSc",curso:"",local:"ucm-feng"}, 
+        {nome:"MATEUS",academico:"",curso:"",local:"ucm-feng"}
+        ]
+
+      var discentes  = []
+
+      var desejados  = []
+
+      document.querySelector('div[name="discentes"] input[type="submit"]').addEventListener("click", evento => {
+        var nome = document.querySelector('div[name="discentes"] input[name="nome"]')
+        discentes.push(nome.value)
+
+        if(!(nome.value === '' || nome.value === ' ')){
+
+          if (evento.target.parentNode.parentNode.parentNode.classList.contains("piscar-finito")) {
+            evento.target.parentNode.parentNode.parentNode.classList.remove("piscar-finito");
+          }
+
+          document.querySelector('button[name="modeloConf"]').click();
+          document.getElementById("modeloConf").setAttribute("painelAbrir",evento.target.parentNode.parentNode.parentNode.getAttribute('name'));
+
+          insFelizDiscente(nome.value);
+          exibidorDasLista()
+
+        }else{
+
+          if (evento.target.classList.contains("piscar-finito")) {
+            evento.target.classList.remove("piscar-finito");
+          }
+
+          if (!evento.target.classList.contains("piscar-finito")) {
+            var inputNome = evento.target.parentNode.querySelector('input[name="nome"]');
+            evento.target.classList.add("piscar-finito");
+            inputNome.placeholder = "Digite o nome aqui"
+          }
+
+
+        }
+      })
+
+
+      document.querySelector('div[name="desejados"] input[type="submit"]').addEventListener("click", evento => {
+        var nome = document.querySelector('div[name="desejados"] input[name="nome"]')
+        desejados.push(nome.value)
+
+                if(!(nome.value === '' || nome.value === ' ')){
+
+
+
+          if (evento.target.parentNode.parentNode.parentNode.classList.contains("piscar-finito")) {
+            evento.target.parentNode.parentNode.parentNode.classList.remove("piscar-finito");
+          }
+
+          document.querySelector('button[name="modeloConf"]').click();
+          document.getElementById("modeloConf").setAttribute("painelAbrir",evento.target.parentNode.parentNode.parentNode.getAttribute('name'));
+
+          insFelizDesejados(nome.value);
+          exibidorDasLista()
+
+        }else{
+
+          if (evento.target.classList.contains("piscar-finito")) {
+            evento.target.classList.remove("piscar-finito");
+          }
+
+          if (!evento.target.classList.contains("piscar-finito")) {
+            var inputNome = evento.target.parentNode.querySelector('input[name="nome"]');
+            evento.target.classList.add("piscar-finito");
+            inputNome.placeholder = "Digite o nome aqui"
+          }
+
+
+        }
+      })
+
+      //Abertura do Modal
+      document.querySelectorAll('#modeloConf button').forEach(elemento =>{
+        elemento.addEventListener('click', evento=>{
+          
+
+          if (!document.querySelector('div[name="'+document.getElementById('modeloConf').getAttribute("painelAbrir")+'"]').classList.contains("piscar-finito")) {
+
+            document.querySelector('div[name="'+document.getElementById('modeloConf').getAttribute("painelAbrir")+'"]').classList.add("piscar-finito");
+          }
+          exibidorDasLista()
+          
+        })
+      });
+
+      document.querySelectorAll('a').forEach(elemento => {
+        elemento.addEventListener('click', evento => {
+          if(
+            elemento.name === "vdocentes" || 
+            elemento.name === "vdiscentes" || 
+            elemento.name === "vdesejados"
+            ){
+
+            document.getElementById('vdocentes').setAttribute('hidden','')
+            document.getElementById('vdiscentes').setAttribute('hidden','')
+            document.getElementById('vdesejados').setAttribute('hidden','')
+
+            document.getElementById(elemento.name).removeAttribute('hidden')
+            exibidorDasLista()
+          }
+
+          elemento.href = "#"+elemento.name;
+
+        })
+      })
+
+      
+      function exibidorDasLista(){
+
+
+        getFelizDiscentes().then((data) => {
+            if (data) {
+                const nomeECount = {};
+             
+                const nomesUnicos = [];
+                  Object.values(data).forEach((item) => {
+                  if (!nomeECount[item.nome]) {
+                      nomeECount[item.nome] = 0;
+                      nomesUnicos.push(item);
+                  }
+                  nomeECount[item.nome]++;
+                });
+
+
+
+              
+
+              listaDis.innerHTML = '';
+              var linha = document.createElement('div');
+              linha.classList.add('d-flex', 'justify-content-between', 'border-bottom','fw-bold');
+
+              var nome = document.createElement('p');
+              var descricao = document.createElement('p');
+
+              nome.textContent = "Nome de descrever" ; descricao.textContent = "Descricao do dia";
+
+              linha.appendChild(nome);linha.appendChild(descricao);listaDis.appendChild(linha);
+              nomesUnicos.forEach(item => {
+                  var linha = document.createElement('div');
+                  linha.classList.add('d-flex', 'justify-content-between', 'border-bottom');
+
+                  var nome = document.createElement('p');
+                  var desejados = document.createElement('p');
+
+                  nome.textContent = item.nome + " (" + nomeECount[item.nome] + ")";
+                  desejados.textContent = item.descricao;
+
+                  linha.appendChild(nome);
+                  linha.appendChild(desejados);
+                  listaDis.appendChild(linha);
+              });    
+            } else {
+                // Trate o caso de nenhum dado encontrado
+                console.log("Nenhum dado encontrado.");
+            }
+        }).catch((error) => {
+            // Trate o erro ao obter os dados
+            console.error("Erro ao obter dados:", error);
+        });
+
+        getFelizDesejados().then((data) => {
+            if (data) {
+                const nomeECount = {};
+             
+                const nomesUnicos = [];
+                  Object.values(data).forEach((item) => {
+                  if (!nomeECount[item.nome]) {
+                      nomeECount[item.nome] = 0;
+                      nomesUnicos.push(item);
+                  }
+                  nomeECount[item.nome]++;
+                });
+
+
+
+              
+
+              listaDes.innerHTML = '';
+              var linha = document.createElement('div');
+              linha.classList.add('d-flex', 'justify-content-between', 'border-bottom','fw-bold');
+
+              var nome = document.createElement('p');
+              var descricao = document.createElement('p');
+
+              nome.textContent = "Nome de descrever" ; descricao.textContent = "Descricao do dia";
+
+              linha.appendChild(nome);linha.appendChild(descricao);listaDes.appendChild(linha);
+              nomesUnicos.forEach(item => {
+                  var linha = document.createElement('div');
+                  linha.classList.add('d-flex', 'justify-content-between', 'border-bottom');
+
+                  var nome = document.createElement('p');
+                  var descricao = document.createElement('p');
+
+                  nome.textContent = item.nome + " (" + nomeECount[item.nome] + ")";
+                  descricao.textContent = item.descricao;
+
+                  linha.appendChild(nome);
+                  linha.appendChild(descricao);
+                  listaDes.appendChild(linha);
+              });    
+            } else {
+                // Trate o caso de nenhum dado encontrado
+                console.log("Nenhum dado encontrado.");
+            }
+        }).catch((error) => {
+            // Trate o erro ao obter os dados
+            console.error("Erro ao obter dados:", error);
+        });
+
+        listaDoc.textContent = "";
+        var linha = document.createElement('div');
+        linha.classList.add('d-flex', 'justify-content-between', 'border-bottom','fw-bold');
+
+        var nome = document.createElement('p');
+        var descricao = document.createElement('p');
+        var curso = document.createElement('p');
+        var academico = document.createElement('p');
+
+        nome.textContent = "Nome de descrever" ; descricao.textContent = "Local de trabalho"; academico.textContent = "Nivel" ; curso.textContent = "Curso";
+
+        linha.appendChild(nome);linha.appendChild(curso);linha.appendChild(academico);linha.appendChild(descricao);listaDoc.appendChild(linha);
+        docentes.forEach(dados => {
+          var linha = document.createElement('div');
+                  linha.classList.add('d-flex', 'justify-content-between', 'border-bottom');
+
+                  var nome = document.createElement('p');
+                  var descricao = document.createElement('p');
+                  var curso = document.createElement('p');
+                  var academico = document.createElement('p');
+
+                  nome.textContent = dados.nome ;
+                  descricao.textContent = dados.local;
+                  curso.textContent = dados.curso ;
+                  academico.textContent = dados.academico;
+
+                  linha.appendChild(nome);
+                  linha.appendChild(descricao);
+                  linha.appendChild(curso);
+                  linha.appendChild(academico);
+                  listaDoc.appendChild(linha);
+        })
+      }
+
+      document.querySelectorAll('div[name="carro"] button').forEach(elemento =>{
+        elemento.addEventListener('click', evento =>{
+          console.log(elemento.parentNode.parentNode.parentNode.querySelector('img'))
+          elemento.parentNode.parentNode.parentNode.querySelector('img').removeAttribute('style')
+
+          elemento.parentNode.setAttribute('hidden','')
+        })
+      })
+
+      document.querySelectorAll('div[name="btnCarro"] button').forEach(elemento =>{
+        elemento.addEventListener('click', evento =>{
+          console.log(elemento.getAttribute('data-bs-slide-to'))
+          var slide = elemento.getAttribute('data-bs-slide-to');
+          document.querySelector('div[name="'+slide+'"]').parentNode.parentNode.querySelector('img').setAttribute('style','opacity:0.5')
+
+          document.querySelector('div[name="'+slide+'"]').removeAttribute('hidden')
+        })
+      })
+
+      var data = new Date();
+      function insFelizDiscente(dados){
+        // Caminho no Realtime Database onde você deseja armazenar os dados do usuário
+        const dbPath = "aval/felizDiscente/" + `${data.getDate()}-${(data.getMonth()+1)}-${data.getFullYear()} ${data.getHours()}:${data.getMinutes()}:${data.getSeconds()}`;
+
+        // Referência ao nó no Realtime Database
+        const dbRef = ref(db, dbPath);
+        const userData = {
+          nome:dados,
+          descricao: "Dia internaconal dos trabalhadores"
+        }
+        return set(dbRef, userData);
+      }
+
+      function insFelizDesejados(dados){
+        // Caminho no Realtime Database onde você deseja armazenar os dados do usuário
+        const dbPath = "aval/felizDesejado/" + `${data.getDate()}-${(data.getMonth()+1)}-${data.getFullYear()} ${data.getHours()}:${data.getMinutes()}:${data.getSeconds()}`;
+
+        // Referência ao nó no Realtime Database
+        const dbRef = ref(db, dbPath);
+        const userData = {
+          nome:dados,
+          descricao: "Dia internaconal dos trabalhadores"
+        }
+        return set(dbRef, userData);
+      }
+      
+      function getFelizDiscentes() {
+        return new Promise((resolve, reject) => {
+          // Caminho no Realtime Database onde os dados estão armazenados
+          const dbPath = "aval/felizDiscente/";
+
+          // Referência ao nó no Realtime Database
+          const dbRef = ref(db, dbPath);
+
+          // Obter os dados
+          get(dbRef).then((snapshot) => {
+              if (snapshot.exists()) {
+                  const dados = snapshot.val();
+                  resolve(dados);
+                  // Faça o que quiser com os dados aqui
+              } else {
+                  console.log("Nenhum dado encontrado.");
+                  resolve(null);
+            }
+          }).catch((error) => {
+              console.error("Erro ao obter dados:", error);
+              reject(error);
+          });
+        });
+      }
+
+      function getFelizDesejados() {
+        return new Promise((resolve, reject) => {
+          // Caminho no Realtime Database onde os dados estão armazenados
+          const dbPath = "aval/felizDesejado/";
+
+          // Referência ao nó no Realtime Database
+          const dbRef = ref(db, dbPath);
+
+          // Obter os dados
+          get(dbRef).then((snapshot) => {
+              if (snapshot.exists()) {
+                  const dados = snapshot.val();
+                  resolve(dados);
+              } else {
+                  console.log("Nenhum dado encontrado.");
+                  resolve(null);
+              }
+          }).catch((error) => {
+              console.error("Erro ao obter dados:", error);
+              reject(error);
+          });
+        })
+
+
+
+      }
+
+    </script>
+
+      
+  </body>
+</html>
